@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an order - Oluwafemi Global Ventures</title>
+        <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div>
+                <img src="assets/logo.png" width="300px" height="100px" alt="OLUWAFEMI GLOBAL VENTURES">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="order.html">Make An Order</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section>
+      
+        <h2>MAKE AN ORDER</h2>
+        <form action="submit_order.html" method="post">
+        <div>
+           <div>
+                <label for="full_name">Full Name</label><br>
+                <input type="text" name="full_name" id="full_name" placeholder="Enter your full name" required/>
+           </div><br>
+           <div>
+                <label for="phone_no">Phone Number</label><br>
+                <input type="number" name="phone_no" id="phone_no" placeholder="Enter your phone number" required/>
+           </div> <br>  
+           <div>
+                <label for="email">Email Address</label><br>
+                <input type="email" name="email_address" id="email_address" placeholder="Enter your email address" required/>
+           </div> <br>
+           <div>
+                <label for="sex">Choose your gender</label><br>
+                <input type="radio" name="gender" id="gender" value="Male"/>Male<input type="radio" name="gender" id="gender" value="Female"/>Female
+           </div> <br>
+           
+            <div>
+                <label for="address">Address</label><br>
+                <textarea name="address" id="address" rows="6" cols="30" placeholder="Enter your address" required></textarea>
+           </div><br>
+           <div>
+                <label for="item_order">Select your Item for order</label><br>
+               <select name="item_order" id="item_order" required>
+                 <option value="" hidden>Select Item</option>
+                    <option value="mouse">Mouse</option>
+                    <option value="keyboard">Keyboard</option>
+                    <option value="speaker">PC Speakers</option>
+                    <option value="PC">PC</option>
+                    <option value="monitor">Monitor</option>
+               </select>
+           </div><br>   
+           <div>
+                <label for="quantity">Quantity</label><br>
+                <input type="number" name="quantity" id="quantity" placeholder="Enter quantity of item needed"/>
+           </div>
+             <div>
+                
+                <input type="submit" name="submit" value="SUBMIT"/>
+           </div>
+            
+        </div>
+        </form>
+    </section>
+    <br><br><br><br>
+    <footer>
+        (c)2026  — Oluwafemi Global Ventures. All Rights Reserved.
+    </footer>
+</body>
+</html>
